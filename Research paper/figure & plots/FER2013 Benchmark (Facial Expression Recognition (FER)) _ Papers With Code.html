@@ -1,0 +1,443 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+    const GTAG_ENABLED =  true ;
+    const GTAG_TRACKING_ID = "UA-121182717-1";
+    const SENTRY_DSN_FRONTEND = "https://6284059d22664211881c89b4c409c619@o241170.ingest.sentry.io/5629308".trim();
+    const GLOBAL_CSRF_TOKEN = 'frAOK7H8FjjcrCrcIULKEL0aeRM0MTBxxgcm8VmkqosWErFskUoO7jYeND0XG9kO';
+    const MEDIA_URL = "https://production-media.paperswithcode.com/";
+    const ASSETS_URL = "https://production-assets.paperswithcode.com";
+    run_after_frontend_loaded = window.run_after_frontend_loaded || [];
+  </script>
+  <link rel="preconnect" href="https://production-assets.paperswithcode.com"><link rel="dns-prefetch" href="https://production-assets.paperswithcode.com"><link rel="preload" as="font" type="font/woff2" href="https://production-assets.paperswithcode.com/perf/fonts/65e877e527022735c1a1.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="https://production-assets.paperswithcode.com/perf/fonts/917632e36982ca7933c8.woff2" crossorigin><link rel="preload" as="font" type="font/woff2" href="https://production-assets.paperswithcode.com/perf/fonts/f1405bd8a987c2ea8a67.woff2" crossorigin><script>(()=>{if(GTAG_ENABLED){const t=document.createElement("script");function n(){window.dataLayer.push(arguments)}t.src=`https://www.googletagmanager.com/gtag/js?id=${GTAG_TRACKING_ID}`,document.head.appendChild(t),window.dataLayer=window.dataLayer||[],window.gtag=n,n("js",new Date),n("config",GTAG_TRACKING_ID),window.captureOutboundLink=function(t){n("event","click",{event_category:"outbound",event_label:t})}}else window.captureOutboundLink=function(n){document.location=n}})();</script><link rel="preload" as="script" href="https://production-assets.paperswithcode.com/perf/766.4af6b88b.js"><link rel="preload" as="script" href="https://production-assets.paperswithcode.com/perf/2.6da00df7.js"><link rel="preload" as="script" href="https://production-assets.paperswithcode.com/perf/351.a22a9607.js"><link rel="preload" as="script" href="https://production-assets.paperswithcode.com/perf/452.d3ecdfa4.js"><link rel="preload" as="style" href="https://production-assets.paperswithcode.com/perf/553.4050647d.css"><link rel="preload" as="script" href="https://production-assets.paperswithcode.com/perf/553.357efc0e.js"><link rel="preload" as="style" href="https://production-assets.paperswithcode.com/perf/918.c41196c3.css"><link rel="preload" as="style" href="https://production-assets.paperswithcode.com/perf/sota.table.fe0fcc15.css"><link rel="preload" as="script" href="https://production-assets.paperswithcode.com/perf/sota.table.040f2c99.js"><link rel="stylesheet" href="https://production-assets.paperswithcode.com/perf/553.4050647d.css"><link rel="stylesheet" href="https://production-assets.paperswithcode.com/perf/918.c41196c3.css"><link rel="stylesheet" href="https://production-assets.paperswithcode.com/perf/sota.table.fe0fcc15.css">
+  
+    
+
+
+
+
+  <!-- Metadata -->
+  <title>FER2013 Benchmark (Facial Expression Recognition (FER)) | Papers With Code</title>
+  <meta name="description" content="The current state-of-the-art on FER2013 is Ensemble ResMaskingNet with 6 other CNNs. See a full comparison of 14 papers with code." />
+  
+
+
+  <!-- Open Graph protocol metadata -->
+  <meta property="og:title" content="Papers with Code - FER2013 Benchmark (Facial Expression Recognition (FER))">
+  <meta property="og:description" content="The current state-of-the-art on FER2013 is Ensemble ResMaskingNet with 6 other CNNs. See a full comparison of 14 papers with code.">
+  
+  <meta property="og:image" content="https://production-media.paperswithcode.com/sota-thumbs/facial-expression-recognition-on-fer2013-large_87353d66.png">
+  
+  <meta property="og:url" content="https://paperswithcode.com/sota/facial-expression-recognition-on-fer2013">
+  
+
+
+  <!-- Twitter metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@paperswithcode">
+  <meta name="twitter:title" content="Papers with Code - FER2013 Benchmark (Facial Expression Recognition (FER))">
+  <meta name="twitter:description" content="The current state-of-the-art on FER2013 is Ensemble ResMaskingNet with 6 other CNNs. See a full comparison of 14 papers with code.">
+  <meta name="twitter:creator" content="@paperswithcode">
+  <meta name="twitter:url" content="https://paperswithcode.com/sota/facial-expression-recognition-on-fer2013">
+  <meta name="twitter:domain" content="paperswithcode.com">
+
+
+<!-- JSON LD -->
+
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@graph": {
+        "@type": "ItemList",
+        "name": "FER2013 Benchmark (Facial Expression Recognition (FER))",
+        "description": "The current state-of-the-art on FER2013 is Ensemble ResMaskingNet with 6 other CNNs. See a full comparison of 14 papers with code.",
+        "url": "https://paperswithcode.com/sota/facial-expression-recognition-on-fer2013",
+        "image": "https://production-media.paperswithcode.com/sota-thumbs/facial-expression-recognition-on-fer2013-large_87353d66.png"
+    }
+}</script>
+
+  
+  <meta name="theme-color" content="#fff"/>
+  <link rel="manifest" href="https://production-assets.paperswithcode.com/static/manifest.web.json">
+
+  
+    
+
+</head>
+<body>
+
+
+
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-light header">
+  <a class="navbar-brand" href="/">
+    
+      <span class=" icon-wrapper" data-name="pwc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M88 128h48v256H88zm144 0h48v256h-48zm-72 16h48v224h-48zm144 0h48v224h-48zm72-16h48v256h-48z"/><path d="M104 104V56H16v400h88v-48H64V104zm304-48v48h40v304h-40v48h88V56z"/></svg></span>
+    
+  </a>
+
+  <div class="navbar-mobile-twitter d-lg-none">
+    <a rel="noreferrer" href="https://twitter.com/paperswithcode">
+      <span class=" icon-wrapper icon-fa icon-fa-brands" data-name="twitter"><svg viewBox="0 0 512.001 515.25" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 152.016c.326 4.548.326 9.097.326 13.645 0 138.72-105.583 298.558-298.559 298.558C101.685 464.22 46.457 447 0 417.114c8.447.973 16.568 1.298 25.34 1.298 49.054 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.113-72.772 6.499.975 12.996 1.624 19.819 1.624 9.42 0 18.843-1.3 27.613-3.573-48.08-9.747-84.142-51.98-84.142-102.984v-1.3c13.968 7.798 30.213 12.67 47.43 13.32-28.263-18.843-46.78-51.006-46.78-87.391 0-19.492 5.196-37.36 14.294-52.954 51.654 63.674 129.3 105.258 216.364 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.827 46.782-104.934 104.934-104.934 30.214 0 57.502 12.67 76.671 33.136 23.715-4.548 46.455-13.319 66.599-25.34-7.798 24.367-24.366 44.834-46.132 57.828 21.117-2.274 41.584-8.122 60.426-16.244-14.292 20.791-32.161 39.309-52.628 54.253z"/></svg></span>
+    </a>
+  </div>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-bs-toggle="collapse"
+    data-target="#top-menu"
+    data-bs-target="#top-menu"
+    aria-controls="top-menu"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="top-menu">
+    <ul class="navbar-nav mr-auto navbar-nav__left light-header">
+      <li class="nav-item header-search">
+        <form action="/search" method="get" id="id_global_search_form" autocomplete="off">
+          <input type="text" name="q_meta" style="display:none" id="q_meta" />
+          <input type="hidden" name="q_type" id="q_type" />
+          <input id="id_global_search_input" autocomplete="off" value="" name='q' class="global-search" type="search" placeholder='Search'/>
+          <button type="submit" class="icon"><span class=" icon-wrapper icon-fa icon-fa-light" data-name="search"><svg viewBox="0 0 512.025 520.146" xmlns="http://www.w3.org/2000/svg"><path d="M508.5 482.6c4.7 4.7 4.7 12.3 0 17l-9.9 9.9c-4.7 4.7-12.3 4.7-17 0l-129-129c-2.2-2.3-3.5-5.3-3.5-8.5v-10.2C312 396 262.5 417 208 417 93.1 417 0 323.9 0 209S93.1 1 208 1s208 93.1 208 208c0 54.5-21 104-55.3 141.1H371c3.2 0 6.2 1.2 8.5 3.5zM208 385c97.3 0 176-78.7 176-176S305.3 33 208 33 32 111.7 32 209s78.7 176 176 176z"/></svg></span></button>
+        </form>
+      </li>
+
+      
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/sota">
+            Browse State-of-the-Art
+          </a>
+        </li>
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/datasets"> Datasets </a>
+          </li>
+        
+
+        
+            <li class="nav-item">
+              <a class="nav-link" href="/methods">Methods</a>
+            </li>
+        
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            role="button"
+            id="navbarDropdownRepro"
+            data-toggle="dropdown"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownRepro">
+        
+            <a class="dropdown-item" href="/newsletter">Newsletter</a>
+            <a class="dropdown-item" href="/rc2022">RC2022</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/about">About</a>
+            <a class="dropdown-item" href="/trends">Trends</a>
+              
+                  <a class="dropdown-item" href="https://portal.paperswithcode.com/">
+                      Portals
+                  </a>
+              
+              
+                  <a class="dropdown-item" href="/libraries"> Libraries </a>
+              
+          </div>
+        </li>
+
+          
+
+
+
+      
+    </ul>
+
+    <ul class="navbar-nav ml-auto navbar-nav__right navbar-subscribe justify-content-center align-items-center">
+      
+
+      <li class="nav-item">
+        <a class="nav-link" rel="noreferrer" href="https://twitter.com/paperswithcode">
+          <span class="nav-link-social-icon icon-wrapper icon-fa icon-fa-brands" data-name="twitter"><svg viewBox="0 0 512.001 515.25" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 152.016c.326 4.548.326 9.097.326 13.645 0 138.72-105.583 298.558-298.559 298.558C101.685 464.22 46.457 447 0 417.114c8.447.973 16.568 1.298 25.34 1.298 49.054 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.113-72.772 6.499.975 12.996 1.624 19.819 1.624 9.42 0 18.843-1.3 27.613-3.573-48.08-9.747-84.142-51.98-84.142-102.984v-1.3c13.968 7.798 30.213 12.67 47.43 13.32-28.263-18.843-46.78-51.006-46.78-87.391 0-19.492 5.196-37.36 14.294-52.954 51.654 63.674 129.3 105.258 216.364 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.827 46.782-104.934 104.934-104.934 30.214 0 57.502 12.67 76.671 33.136 23.715-4.548 46.455-13.319 66.599-25.34-7.798 24.367-24.366 44.834-46.132 57.828 21.117-2.274 41.584-8.122 60.426-16.244-14.292 20.791-32.161 39.309-52.628 54.253z"/></svg></span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" rel="noreferrer" href="https://join.slack.com/t/paperswithcode/shared_invite/zt-1x91uz110-TZu6dVyMCNKpW96U0ZYfHw">
+          <span class="nav-link-social-icon nav-link-social-icon-slack icon-wrapper" data-name="slack"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270"><path d="M99.4 151.2c0 7.1-5.8 12.9-12.9 12.9-7.1 0-12.9-5.8-12.9-12.9 0-7.1 5.8-12.9 12.9-12.9h12.9v12.9zm6.5 0c0-7.1 5.8-12.9 12.9-12.9s12.9 5.8 12.9 12.9v32.3c0 7.1-5.8 12.9-12.9 12.9s-12.9-5.8-12.9-12.9v-32.3z" fill="#e01e5a"/><path d="M118.8 99.4c-7.1 0-12.9-5.8-12.9-12.9 0-7.1 5.8-12.9 12.9-12.9s12.9 5.8 12.9 12.9v12.9h-12.9zm0 6.5c7.1 0 12.9 5.8 12.9 12.9s-5.8 12.9-12.9 12.9H86.5c-7.1 0-12.9-5.8-12.9-12.9s5.8-12.9 12.9-12.9h32.3z" fill="#36c5f0"/><path d="M170.6 118.8c0-7.1 5.8-12.9 12.9-12.9 7.1 0 12.9 5.8 12.9 12.9s-5.8 12.9-12.9 12.9h-12.9v-12.9zm-6.5 0c0 7.1-5.8 12.9-12.9 12.9-7.1 0-12.9-5.8-12.9-12.9V86.5c0-7.1 5.8-12.9 12.9-12.9 7.1 0 12.9 5.8 12.9 12.9v32.3z" fill="#2eb67d"/><path d="M151.2 170.6c7.1 0 12.9 5.8 12.9 12.9 0 7.1-5.8 12.9-12.9 12.9-7.1 0-12.9-5.8-12.9-12.9v-12.9h12.9zm0-6.5c-7.1 0-12.9-5.8-12.9-12.9 0-7.1 5.8-12.9 12.9-12.9h32.3c7.1 0 12.9 5.8 12.9 12.9 0 7.1-5.8 12.9-12.9 12.9h-32.3z" fill="#ecb22e"/></svg></span>
+        </a>
+      </li>
+
+      
+        <li class="nav-item">
+          <a id="signin-link" class="nav-link" href="/accounts/login?next=/sota/facial-expression-recognition-on-fer2013">Sign In</a>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<!-- Page modals -->
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="emailModalLabel">Subscribe to the PwC Newsletter</h3>
+        <button type="button" class="close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="" method="post">
+        <div class="modal-body">
+          <div class="modal-body-info-text">
+            Stay informed on the latest trending ML papers with code, research developments, libraries, methods, and datasets.<br/><br/>
+            <a href="/newsletter">Read previous issues</a>
+          </div>
+
+          <input type="hidden" name="csrfmiddlewaretoken" value="frAOK7H8FjjcrCrcIULKEL0aeRM0MTBxxgcm8VmkqosWErFskUoO7jYeND0XG9kO">
+          <input placeholder="Enter your email" type="email" class="form-control pwc-email" name="address" id="id_address" max_length="100" required>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Join the community</h5>
+        <button type="button" class="close btn-close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="login-modal-message">
+        You need to <a href="/accounts/login?next=/sota/facial-expression-recognition-on-fer2013">log in</a> to edit.<br/>
+        You can <a href="/accounts/register?next=/sota/facial-expression-recognition-on-fer2013">create a new account</a> if you don't have one.<br/><br/>
+        Or, discuss a change on <a href="https://join.slack.com/t/paperswithcode/shared_invite/zt-1x91uz110-TZu6dVyMCNKpW96U0ZYfHw"><i class="fab fa-slack"></i> Slack</a>.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container content content-buffer ">
+
+  
+    
+    
+    
+    
+    
+
+
+    <div class="leaderboard-header">
+        <a href="/task/facial-expression-recognition">
+                    <span class="badge badge-primary">
+                         
+                             <img src="https://production-media.paperswithcode.com/thumbnails/task/task-0000000449-5e15a1d3.jpg">
+                         
+                    <span>Facial Expression Recognition (FER)</span>
+                    </span>
+        </a>
+    </div>
+
+    <div id="sota-page">
+        <div class="text-center">
+            <img src="https://production-assets.paperswithcode.com/perf/images/spin-1s-32px-ed14c515.gif">
+        </div>
+    </div>
+
+    <link href="https://production-assets.paperswithcode.com/static/fonts/font-awesome/css/all.min.css" rel="stylesheet" />
+
+    <script type="application/javascript">
+        const CSRF_TOKEN = "frAOK7H8FjjcrCrcIULKEL0aeRM0MTBxxgcm8VmkqosWErFskUoO7jYeND0XG9kO";
+        const USER_IS_AUTHENTICATED = false;
+        const LOGIN_REQUIRED = true;
+
+    </script>
+
+    <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule=""
+  src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+></script>
+    
+    
+
+    <!-- Start SOTA Table Generation -->
+    <script id="evaluation-chart-data" type="application/json">{"all": {"yAxis": {"title": "Accuracy", "includeZero": false, "gridColor": "#ddd", "valueFormatString": "", "minimum": 66.546, "maximum": 77.75399999999999}, "data": {"trend": {"name": "State-of-the-art methods", "type": "line", "showInLegend": true, "markerSize": 10, "toolTipContent": "{name}: {y}", "color": "#21ccc7", "dataPoints": [{"x": "2013-07-01", "y": 67.48, "name": "Local Learning BOW", "nameShort": "Local Learning BOW", "nameDetails": null, "paperSlug": "challenges-in-representation-learning-a", "usesAdditionalData": false}, {"x": "2016-12-09", "y": 72.7, "name": "VGG", "nameShort": "VGG", "nameDetails": null, "paperSlug": "facial-expression-recognition-using", "usesAdditionalData": false}, {"x": "2018-04-29", "y": 75.42, "name": "Local Learning Deep+BOW", "nameShort": "Local Learning Deep+BOW", "nameDetails": null, "paperSlug": "local-learning-with-deep-and-handcrafted", "usesAdditionalData": true}, {"x": "2021-08-01", "y": 76.82, "name": "Ensemble ResMaskingNet with 6 other CNNs", "nameShort": "Ensemble ResMaskingNet with 6 other CNNs", "nameDetails": null, "paperSlug": "challenges-in-representation-learning-a", "usesAdditionalData": true}]}, "other": {"name": "Other methods", "type": "scatter", "showInLegend": true, "color": "#ddd", "markerSize": 10, "toolTipContent": "{name}: {y}", "dataPoints": [{"x": "2016-12-09", "y": 72.4, "name": "Res-Net", "nameShort": "Res-Net", "nameDetails": null, "paperSlug": "facial-expression-recognition-using", "usesAdditionalData": false}, {"x": "2016-12-09", "y": 71.6, "name": "Inception", "nameShort": "Inception", "nameDetails": null, "paperSlug": "facial-expression-recognition-using", "usesAdditionalData": false}, {"x": "2019-02-04", "y": 70.02, "name": "DeepEmotion", "nameShort": "DeepEmotion", "nameDetails": null, "paperSlug": "deep-emotion-facial-expression-recognition", "usesAdditionalData": false}, {"x": "2021-03-25", "y": 72.16, "name": "CNN Hyperparameter Optimisation", "nameShort": "CNN Hyperparameter Optimisation", "nameDetails": null, "paperSlug": "convolutional-neural-network-hyperparameters", "usesAdditionalData": false}, {"x": "2021-05-08", "y": 73.28, "name": "VGGNet", "nameShort": "VGGNet", "nameDetails": null, "paperSlug": "facial-emotion-recognition-state-of-the-art", "usesAdditionalData": false}, {"x": "2021-07-01", "y": 74.14, "name": "Residual Masking Network", "nameShort": "Residual Masking Network", "nameDetails": null, "paperSlug": "challenges-in-representation-learning-a", "usesAdditionalData": true}, {"x": "2021-11-14", "y": 74.42, "name": "LHC-Net", "nameShort": "LHC-Net", "nameDetails": null, "paperSlug": "local-multi-head-channel-self-attention-for", "usesAdditionalData": true}, {"x": "2021-12-29", "y": 73.7, "name": "ResNet18 With Tricks", "nameShort": "ResNet18 With Tricks", "nameDetails": null, "paperSlug": "fer2013-recognition-resnet18-with-tricks", "usesAdditionalData": false}, {"x": "2022-03-03", "y": 72.03, "name": "Ad-Corre", "nameShort": "Ad-Corre", "nameDetails": null, "paperSlug": "ad-corre-adaptive-correlation-based-loss-for", "usesAdditionalData": false}, {"x": "2023-03-24", "y": 75.97, "name": "Segmentation VGG-19", "nameShort": "Segmentation VGG-19", "nameDetails": null, "paperSlug": "a-novel-facial-emotion-recognition-model", "usesAdditionalData": true}]}}}, "uses_additional_data": {"yAxis": {"title": "Accuracy", "includeZero": false, "gridColor": "#ddd", "valueFormatString": "", "minimum": 73.872, "maximum": 77.088}, "data": {"trend": {"name": "State-of-the-art methods", "type": "line", "showInLegend": true, "markerSize": 10, "toolTipContent": "{name}: {y}", "color": "#21ccc7", "dataPoints": [{"x": "2018-04-29", "y": 75.42, "name": "Local Learning Deep+BOW", "nameShort": "Local Learning Deep+BOW", "nameDetails": null, "paperSlug": "local-learning-with-deep-and-handcrafted", "usesAdditionalData": true}, {"x": "2021-08-01", "y": 76.82, "name": "Ensemble ResMaskingNet with 6 other CNNs", "nameShort": "Ensemble ResMaskingNet with 6 other CNNs", "nameDetails": null, "paperSlug": "challenges-in-representation-learning-a", "usesAdditionalData": true}]}, "other": {"name": "Other methods", "type": "scatter", "showInLegend": true, "color": "#ddd", "markerSize": 10, "toolTipContent": "{name}: {y}", "dataPoints": [{"x": "2021-07-01", "y": 74.14, "name": "Residual Masking Network", "nameShort": "Residual Masking Network", "nameDetails": null, "paperSlug": "challenges-in-representation-learning-a", "usesAdditionalData": true}, {"x": "2021-11-14", "y": 74.42, "name": "LHC-Net", "nameShort": "LHC-Net", "nameDetails": null, "paperSlug": "local-multi-head-channel-self-attention-for", "usesAdditionalData": true}, {"x": "2023-03-24", "y": 75.97, "name": "Segmentation VGG-19", "nameShort": "Segmentation VGG-19", "nameDetails": null, "paperSlug": "a-novel-facial-emotion-recognition-model", "usesAdditionalData": true}]}}}, "no_additional_data": {"yAxis": {"title": "Accuracy", "includeZero": false, "gridColor": "#ddd", "valueFormatString": "", "minimum": 66.858, "maximum": 74.322}, "data": {"trend": {"name": "State-of-the-art methods", "type": "line", "showInLegend": true, "markerSize": 10, "toolTipContent": "{name}: {y}", "color": "#21ccc7", "dataPoints": [{"x": "2013-07-01", "y": 67.48, "name": "Local Learning BOW", "nameShort": "Local Learning BOW", "nameDetails": null, "paperSlug": "challenges-in-representation-learning-a", "usesAdditionalData": false}, {"x": "2016-12-09", "y": 72.7, "name": "VGG", "nameShort": "VGG", "nameDetails": null, "paperSlug": "facial-expression-recognition-using", "usesAdditionalData": false}, {"x": "2021-05-08", "y": 73.28, "name": "VGGNet", "nameShort": "VGGNet", "nameDetails": null, "paperSlug": "facial-emotion-recognition-state-of-the-art", "usesAdditionalData": false}, {"x": "2021-12-29", "y": 73.7, "name": "ResNet18 With Tricks", "nameShort": "ResNet18 With Tricks", "nameDetails": null, "paperSlug": "fer2013-recognition-resnet18-with-tricks", "usesAdditionalData": false}]}, "other": {"name": "Other methods", "type": "scatter", "showInLegend": true, "color": "#ddd", "markerSize": 10, "toolTipContent": "{name}: {y}", "dataPoints": [{"x": "2016-12-09", "y": 72.4, "name": "Res-Net", "nameShort": "Res-Net", "nameDetails": null, "paperSlug": "facial-expression-recognition-using", "usesAdditionalData": false}, {"x": "2016-12-09", "y": 71.6, "name": "Inception", "nameShort": "Inception", "nameDetails": null, "paperSlug": "facial-expression-recognition-using", "usesAdditionalData": false}, {"x": "2019-02-04", "y": 70.02, "name": "DeepEmotion", "nameShort": "DeepEmotion", "nameDetails": null, "paperSlug": "deep-emotion-facial-expression-recognition", "usesAdditionalData": false}, {"x": "2021-03-25", "y": 72.16, "name": "CNN Hyperparameter Optimisation", "nameShort": "CNN Hyperparameter Optimisation", "nameDetails": null, "paperSlug": "convolutional-neural-network-hyperparameters", "usesAdditionalData": false}, {"x": "2022-03-03", "y": 72.03, "name": "Ad-Corre", "nameShort": "Ad-Corre", "nameDetails": null, "paperSlug": "ad-corre-adaptive-correlation-based-loss-for", "usesAdditionalData": false}]}}}}</script>
+    <script id="evaluation-table-metrics" type="application/json">[{"id": 2440, "name": "Accuracy", "is_loss": false, "is_fixed": false}]</script>
+    <script id="evaluation-table-data" type="application/json">[{"table_id": 1643, "row_id": 9598, "rank": 1, "method": "Ensemble ResMaskingNet with 6 other CNNs", "mlmodel": {}, "method_short": "Ensemble ResMaskingNet with 6 other CNNs", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2021-08-01", "metrics": {"Accuracy": "76.82"}, "raw_metrics": {"Accuracy": 76.82}, "uses_additional_data": true, "paper": {"id": 48800, "title": "Challenges in Representation Learning: A report on three machine learning contests", "url": "/paper/challenges-in-representation-learning-a", "published": "2013-07-01T00:00:00.000000", "code": true, "review_url": "/paper/challenges-in-representation-learning-a/review/?hl=9598"}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 100021, "rank": 2, "method": "Segmentation VGG-19", "mlmodel": {}, "method_short": "Segmentation VGG-19", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2023-03-24", "metrics": {"Accuracy": "75.97"}, "raw_metrics": {"Accuracy": 75.97}, "uses_additional_data": true, "paper": {"id": 1179396, "title": "A novel facial emotion recognition model using segmentation VGG-19 architecture", "url": "/paper/a-novel-facial-emotion-recognition-model", "published": "2023-03-24T00:00:00.000000", "code": false, "review_url": null}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 54096, "rank": 3, "method": "Local Learning Deep+BOW", "mlmodel": {}, "method_short": "Local Learning Deep+BOW", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2018-04-29", "metrics": {"Accuracy": "75.42"}, "raw_metrics": {"Accuracy": 75.42}, "uses_additional_data": true, "paper": {"id": 4501, "title": "Local Learning with Deep and Handcrafted Features for Facial Expression Recognition", "url": "/paper/local-learning-with-deep-and-handcrafted", "published": "2018-04-29T00:00:00.000000", "code": false, "review_url": "/paper/local-learning-with-deep-and-handcrafted/review/?hl=54096"}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 42591, "rank": 4, "method": "LHC-Net", "mlmodel": {}, "method_short": "LHC-Net", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2021-11-14", "metrics": {"Accuracy": "74.42"}, "raw_metrics": {"Accuracy": 74.42}, "uses_additional_data": true, "paper": {"id": 909818, "title": "Local Multi-Head Channel Self-Attention for Facial Expression Recognition", "url": "/paper/local-multi-head-channel-self-attention-for", "published": "2021-11-14T00:00:00.000000", "code": true, "review_url": "/paper/local-multi-head-channel-self-attention-for/review/?hl=42591"}, "external_source_url": null, "tags": [{"id": 62, "name": "Self-Attention", "color": "#f0c1c1"}, {"id": 3, "name": "ResNet", "color": "#2771D3"}], "reports": []}, {"table_id": 1643, "row_id": 9597, "rank": 5, "method": "Residual Masking Network", "mlmodel": {}, "method_short": "Residual Masking Network", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2021-07-01", "metrics": {"Accuracy": "74.14"}, "raw_metrics": {"Accuracy": 74.14}, "uses_additional_data": true, "paper": {"id": 48800, "title": "Challenges in Representation Learning: A report on three machine learning contests", "url": "/paper/challenges-in-representation-learning-a", "published": "2013-07-01T00:00:00.000000", "code": true, "review_url": "/paper/challenges-in-representation-learning-a/review/?hl=9597"}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 45259, "rank": 6, "method": "ResNet18 With Tricks", "mlmodel": {}, "method_short": "ResNet18 With Tricks", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2021-12-29", "metrics": {"Accuracy": "73.70"}, "raw_metrics": {"Accuracy": 73.7}, "uses_additional_data": false, "paper": {"id": 942135, "title": "Fer2013 Recognition - ResNet18 With Tricks", "url": "/paper/fer2013-recognition-resnet18-with-tricks", "published": "2021-12-29T00:00:00.000000", "code": true, "review_url": null}, "external_source_url": null, "tags": [{"id": 3, "name": "ResNet", "color": "#2771D3"}], "reports": []}, {"table_id": 1643, "row_id": 31975, "rank": 7, "method": "VGGNet", "mlmodel": {}, "method_short": "VGGNet", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2021-05-08", "metrics": {"Accuracy": "73.28"}, "raw_metrics": {"Accuracy": 73.28}, "uses_additional_data": false, "paper": {"id": 796076, "title": "Facial Emotion Recognition: State of the Art Performance on FER2013", "url": "/paper/facial-emotion-recognition-state-of-the-art", "published": "2021-05-08T00:00:00.000000", "code": true, "review_url": null}, "external_source_url": null, "tags": [{"id": 16, "name": "VGG", "color": "#9e3dff"}], "reports": []}, {"table_id": 1643, "row_id": 13238, "rank": 8, "method": "VGG", "mlmodel": {}, "method_short": "VGG", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2016-12-09", "metrics": {"Accuracy": "72.7"}, "raw_metrics": {"Accuracy": 72.7}, "uses_additional_data": false, "paper": {"id": 27886, "title": "Facial Expression Recognition using Convolutional Neural Networks: State of the Art", "url": "/paper/facial-expression-recognition-using", "published": "2016-12-09T00:00:00.000000", "code": true, "review_url": "/paper/facial-expression-recognition-using/review/?hl=13238"}, "external_source_url": null, "tags": [{"id": 16, "name": "VGG", "color": "#9e3dff"}], "reports": []}, {"table_id": 1643, "row_id": 13239, "rank": 9, "method": "Res-Net", "mlmodel": {}, "method_short": "Res-Net", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2016-12-09", "metrics": {"Accuracy": "72.4"}, "raw_metrics": {"Accuracy": 72.4}, "uses_additional_data": false, "paper": {"id": 27886, "title": "Facial Expression Recognition using Convolutional Neural Networks: State of the Art", "url": "/paper/facial-expression-recognition-using", "published": "2016-12-09T00:00:00.000000", "code": true, "review_url": "/paper/facial-expression-recognition-using/review/?hl=13239"}, "external_source_url": null, "tags": [{"id": 3, "name": "ResNet", "color": "#2771D3"}], "reports": []}, {"table_id": 1643, "row_id": 36807, "rank": 10, "method": "CNN Hyperparameter Optimisation", "mlmodel": {}, "method_short": "CNN Hyperparameter Optimisation", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2021-03-25", "metrics": {"Accuracy": "72.16"}, "raw_metrics": {"Accuracy": 72.16}, "uses_additional_data": false, "paper": {"id": 836881, "title": "Convolutional Neural Network Hyperparameters optimization for Facial Emotion Recognition", "url": "/paper/convolutional-neural-network-hyperparameters", "published": "2021-03-25T00:00:00.000000", "code": true, "review_url": null}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 48967, "rank": 11, "method": "Ad-Corre", "mlmodel": {}, "method_short": "Ad-Corre", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2022-03-03", "metrics": {"Accuracy": "72.03"}, "raw_metrics": {"Accuracy": 72.03}, "uses_additional_data": false, "paper": {"id": 974846, "title": "Ad-Corre: Adaptive Correlation-Based Loss for Facial Expression Recognition in the Wild", "url": "/paper/ad-corre-adaptive-correlation-based-loss-for", "published": "2022-03-03T00:00:00.000000", "code": true, "review_url": null}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 13240, "rank": 12, "method": "Inception", "mlmodel": {}, "method_short": "Inception", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2016-12-09", "metrics": {"Accuracy": "71.6"}, "raw_metrics": {"Accuracy": 71.6}, "uses_additional_data": false, "paper": {"id": 27886, "title": "Facial Expression Recognition using Convolutional Neural Networks: State of the Art", "url": "/paper/facial-expression-recognition-using", "published": "2016-12-09T00:00:00.000000", "code": true, "review_url": "/paper/facial-expression-recognition-using/review/?hl=13240"}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 13241, "rank": 13, "method": "DeepEmotion", "mlmodel": {}, "method_short": "DeepEmotion", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2019-02-04", "metrics": {"Accuracy": "70.02"}, "raw_metrics": {"Accuracy": 70.02}, "uses_additional_data": false, "paper": {"id": 93278, "title": "Deep-Emotion: Facial Expression Recognition Using Attentional Convolutional Network", "url": "/paper/deep-emotion-facial-expression-recognition", "published": "2019-02-04T00:00:00.000000", "code": true, "review_url": "/paper/deep-emotion-facial-expression-recognition/review/?hl=13241"}, "external_source_url": null, "tags": [], "reports": []}, {"table_id": 1643, "row_id": 54098, "rank": 14, "method": "Local Learning BOW", "mlmodel": {}, "method_short": "Local Learning BOW", "method_details": null, "mlmodel_short": null, "mlmodeldetails": null, "evaluation_date": "2013-07-01", "metrics": {"Accuracy": "67.48"}, "raw_metrics": {"Accuracy": 67.48}, "uses_additional_data": false, "paper": {"id": 48800, "title": "Challenges in Representation Learning: A report on three machine learning contests", "url": "/paper/challenges-in-representation-learning-a", "published": "2013-07-01T00:00:00.000000", "code": true, "review_url": "/paper/challenges-in-representation-learning-a/review/?hl=54098"}, "external_source_url": null, "tags": [], "reports": []}]</script>
+    <script id="community-chart-data" type="application/json">{"all": {"yAxis": {"title": "Accuracy", "includeZero": false, "gridColor": "#ddd", "valueFormatString": ""}, "data": {"trend": {"name": "State-of-the-art methods", "type": "line", "showInLegend": true, "markerSize": 10, "toolTipContent": "{name}: {y}", "color": "#21ccc7", "dataPoints": []}, "other": {"name": "Other methods", "type": "scatter", "showInLegend": true, "color": "#ddd", "markerSize": 10, "toolTipContent": "{name}: {y}", "dataPoints": []}}}, "uses_additional_data": {"yAxis": {"title": "Accuracy", "includeZero": false, "gridColor": "#ddd", "valueFormatString": ""}, "data": {"trend": {"name": "State-of-the-art methods", "type": "line", "showInLegend": true, "markerSize": 10, "toolTipContent": "{name}: {y}", "color": "#21ccc7", "dataPoints": []}, "other": {"name": "Other methods", "type": "scatter", "showInLegend": true, "color": "#ddd", "markerSize": 10, "toolTipContent": "{name}: {y}", "dataPoints": []}}}, "no_additional_data": {"yAxis": {"title": "Accuracy", "includeZero": false, "gridColor": "#ddd", "valueFormatString": ""}, "data": {"trend": {"name": "State-of-the-art methods", "type": "line", "showInLegend": true, "markerSize": 10, "toolTipContent": "{name}: {y}", "color": "#21ccc7", "dataPoints": []}, "other": {"name": "Other methods", "type": "scatter", "showInLegend": true, "color": "#ddd", "markerSize": 10, "toolTipContent": "{name}: {y}", "dataPoints": []}}}}</script>
+    <script id="community-table-metrics" type="application/json">[]</script>
+    <script id="community-table-data" type="application/json">[]</script>
+    <script id="dataset-details" type="application/json">[{"name": "FER2013", "fullName": "Facial Expression Recognition 2013 Dataset", "url": "/dataset/fer2013", "description": "Fer2013 contains approximately 30,000 facial RGB images of different expressions with size restricted to 48\u00d748, and the main labels of it can be divided into 7 types: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral. The Disgust expression has the minimal number of images \u2013 600, while other labels have nearly 5,000 samples each.", "imagePath": "https://production-media.paperswithcode.com/datasets/FER2013-0000001434-01251bb8_415HDzL.jpg", "iconName": "images", "color": "#A395C6"}]</script>
+    <script id="sota-page-details" type="application/json">{"task_main_area_name": "Computer Vision", "task_name": "Facial Expression Recognition (FER)", "dataset_name": "FER2013", "description": "", "mirror_url": null, "has_competition_entries": false}</script>
+
+    <script type="application/javascript">
+            let evaluationChartData = JSON.parse(
+                document.getElementById("evaluation-chart-data").textContent
+            );
+            let evaluationTableMetrics = JSON.parse(
+                document.getElementById("evaluation-table-metrics").textContent
+            );
+            let evaluationTableData = JSON.parse(
+                document.getElementById("evaluation-table-data").textContent
+            );
+            let communityChartData = JSON.parse(
+                document.getElementById("community-chart-data").textContent
+            );
+            let communityTableMetrics = JSON.parse(
+                document.getElementById("community-table-metrics").textContent
+            );
+            let communityTableData = JSON.parse(
+                document.getElementById("community-table-data").textContent
+            );
+            let datasetDetails = JSON.parse(
+                document.getElementById("dataset-details").textContent
+            );
+            let sotaPageDetails = JSON.parse(
+                document.getElementById("sota-page-details").textContent
+            );
+            // Containers
+            let sotaPageContainer = document.getElementById("sota-page");
+
+            // Breadcrumbs
+            let breadcrumbs = [
+                {
+                    title: "Browse",
+                    url: "/sota"
+                },
+                
+                {
+                    title: sotaPageDetails.task_main_area_name,
+                    url: "/area/computer-vision"
+                },
+                
+                {
+                    title: sotaPageDetails.task_name,
+                    url: "/task/facial-expression-recognition"
+                },
+                
+                {
+                    title: sotaPageDetails.dataset_name + " dataset",
+                    url: "/dataset/fer2013"
+                }
+                
+            ];
+
+            let highlight = (
+                
+                    null
+                
+            );
+
+            function datasetsSearchUrl(query) {
+                return "/datasets?q="+encodeURIComponent(query);
+            }
+
+            function newDatasetUrl(datasetName) {
+                return "/contribute/dataset/new?name="+encodeURIComponent(datasetName);
+            }
+
+            const SOTA_AUTOCOMPLETE_PAPER_URL = "/sota/autocomplete/paper";
+            const VIEW_PAPER_URL = "/paper/PAPER_SLUG";
+    </script>
+    <!-- End SOTA Table Generation -->
+
+
+
+</div>
+
+
+
+
+
+<div class="footer">
+  <div class="footer-contact">
+    <span class="footer-contact-item">Contact us on:</span>
+
+    <a class="footer-contact-item" href="mailto:hello@paperswithcode.com">
+    <span class=" icon-wrapper icon-ion" data-name="mail"><svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M424 80H88a56.06 56.06 0 0 0-56 56v240a56.06 56.06 0 0 0 56 56h336a56.06 56.06 0 0 0 56-56V136a56.06 56.06 0 0 0-56-56zm-14.18 92.63l-144 112a16 16 0 0 1-19.64 0l-144-112a16 16 0 1 1 19.64-25.26L256 251.73l134.18-104.36a16 16 0 0 1 19.64 25.26z"/></svg></span> hello@paperswithcode.com
+    </a>.
+    <span class="footer-contact-item">
+        Papers With Code is a free resource with all data licensed under <a rel="noreferrer" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>.
+    </span>
+  </div>
+
+  <div class="footer-links">
+      <a href="/site/terms">Terms</a>
+      <a href="/site/data-policy">Data policy</a>
+      <a href="/site/cookies-policy">Cookies policy</a>
+      <a href="/about#team" class="fair-logo"> from
+          <img src="data:image/png;base64,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">
+      </a>
+  </div>
+</div>
+
+
+
+<script>
+  // MathJax
+  window.MathJax = {
+    tex: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
+    },
+  };
+
+  const mathjaxScript = document.createElement("script");
+  mathjaxScript.src = "https://production-assets.paperswithcode.com/static/js/mathjax/tex-chtml.js";
+  document.head.appendChild(mathjaxScript);
+</script>
+
+
+<script src="https://production-assets.paperswithcode.com/perf/766.4af6b88b.js" defer></script><script src="https://production-assets.paperswithcode.com/perf/2.6da00df7.js" defer></script><script src="https://production-assets.paperswithcode.com/perf/351.a22a9607.js" defer></script><script src="https://production-assets.paperswithcode.com/perf/452.d3ecdfa4.js" defer></script><script src="https://production-assets.paperswithcode.com/perf/553.357efc0e.js" defer></script><script src="https://production-assets.paperswithcode.com/perf/sota.table.040f2c99.js" defer></script>
+
+
+
+</body>
+</html>
+
+
